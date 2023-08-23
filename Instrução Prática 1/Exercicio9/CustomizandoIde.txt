@@ -1,0 +1,2 @@
+Ja tenho instalado o tema Tokyo Night que é mais do meu agrado do que a Dracula, para instalar
+é so ir na parte de extensões do visual studio code, pesquisar o nome da tema e instalar.

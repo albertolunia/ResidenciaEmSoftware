@@ -1,0 +1,2 @@
+Intalei a extensão Live Share, para facilitar o trabalho em equipe e a extensão GitHub Copilot
+para facilitar a escrita dos codigos.

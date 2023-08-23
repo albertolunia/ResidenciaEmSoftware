@@ -1,0 +1,11 @@
+Extensões intaladas na minha IDE:
+
+C/C++
+C/C++ Compile Run
+C/C++ Extension Pack
+C/C++ Themes
+CMake
+CMake Tools
+GitHub Copilot
+Live Share
+Tokyo Night
