@@ -3,46 +3,22 @@
 
 using namespace std;
 
-void printBool(bool value) {
-    if (value) {
-        cout << "true";
-    } else {
-        cout << "false";
-    }
-}
-
 int main() {
     int vInt = 0;
     float vFloat = 0;
     double vDouble = 0;
 
-    cout << "Valor inteiro 0 como boolean: "; 
-    printBool(vInt);
-    cout << endl;
-    
-    cout << "Valor inteiro 0 como float: ";
-    printBool(vFloat);
-    cout << endl;
+    cout << "Valor inteiro 0 como boolean: " << bool(vInt) << endl;
+    cout << "Valor inteiro 0 como float: " << bool(vFloat) << endl;
+    cout << "Valor inteiro 0 como double: " << bool(vDouble) << endl;
 
-    cout << "Valor inteiro 0 como double: ";
-    printBool(vDouble);
-    cout << endl;
+    vInt = 223;
+    vFloat = 14.5;
+    vDouble = 542.12542;
 
-    vInt = 1;
-    vFloat = 1;
-    vDouble = 1;
-
-    cout << "Valor inteiro 1 como boolean: ";
-    printBool(vInt);
-    cout << endl;
-
-    cout << "Valor inteiro 1 como float: ";
-    printBool(vFloat);
-    cout << endl;
-
-    cout << "Valor inteiro 1 como double: ";
-    printBool(vDouble);
-    cout << endl;
+    cout << "Valor inteiro diferente de 0 como boolean: " << bool(vInt) << endl;
+    cout << "Valor inteiro diferente de 0 como float: " << bool(vFloat) << endl;
+    cout << "Valor inteiro diferente de 0 como double: " << bool(vDouble) << endl;
     
     return 0;
 }
