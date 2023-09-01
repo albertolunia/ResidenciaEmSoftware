@@ -3,11 +3,24 @@
 using namespace std;
 
 int main() {
-    char letra[] = "0123456789";
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char letra = '0';
     
-    for (int i = 0; i < 10; i++)
-    {
-        cout << "'" << letra[i] << "' - " << int(letra[i]) << endl;
-    }
+    cout << "'" << letra++ << "' - " << int(letra) << endl;
+    cout << "'" << letra++ << "' - " << int(letra) << endl;
+    cout << "'" << letra++ << "' - " << int(letra) << endl;
+    cout << "'" << letra++ << "' - " << int(letra) << endl;
+    cout << "'" << letra++ << "' - " << int(letra) << endl;
+    cout << "'" << letra++ << "' - " << int(letra) << endl;
+    cout << "'" << letra++ << "' - " << int(letra) << endl;
+    cout << "'" << letra++ << "' - " << int(letra) << endl;
+    cout << "'" << letra++ << "' - " << int(letra) << endl;
+    cout << "'" << letra++ << "' - " << int(letra) << endl;
+
     return 0;
+}
 }
