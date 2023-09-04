@@ -4,12 +4,12 @@ using namespace std;
 
 int main(){
 
-    int num1, num2;
+    int num1, num2, maior;
 
     cout << "Digite dois numeros: ";
     cin >> num1 >> num2;
 
-    int maior = (num1 > num2) ? num1 : num2;
+    maior = (num1 > num2) ? num1 : num2;
 
     cout << "O maior numero e: " << maior << endl;
 
