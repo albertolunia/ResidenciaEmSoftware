@@ -4,36 +4,47 @@ using namespace std;
 
 int main()
 {
-    int array[100], array2[20], i, maior, posicao;
+    int array[100], array2[20] = {0}, maior = 0, hash;
 
-    for (i = 0; i < 100; i++)
+    srand(time(NULL));
+
+    for (int i = 0; i < 100; i++)
     {
         array[i] = 1 + rand() % 20;
+
+        array2[array[i]-1]++;
     }
 
-    for (i = 0; i < 20; i++)
+    for (int i = 0; i < 20; i++)
     {
-        array2[i] = 0;
+        cout << "O numero " << i+1 << " apareceu " << array2[i] << " vezes. ";
+        hash = array2[i];
+        while (hash > 0)
+        {
+            cout << "#";
+            hash--;
+        }
+
+        cout << endl;
     }
 
-    for (i = 0; i < 100; i++)
-    {
-        array2[array[i] - 1]++;
-    }
-
-    maior = array2[0];
-    posicao = 0;
-
-    for (i = 0; i < 20; i++)
+    for (int i = 0; i < 20; i++)
     {
         if (array2[i] > maior)
         {
             maior = array2[i];
-            posicao = i;
         }
     }
 
-    cout << "O numero que mais vezes aparece no array e o " << posicao + 1 << " com " << maior << " repeticoes." << endl;
+    for (int i = 0; i < 20; i++)
+    {
+        if(array2[i] == maior)
+        {
+            cout << "\nO numero que mais apareceu foi " << i+1 << " apareceu " << array2[i] << " vezes. " << endl;
+        }
+    }
+    
 
+    
     return 0;
 }

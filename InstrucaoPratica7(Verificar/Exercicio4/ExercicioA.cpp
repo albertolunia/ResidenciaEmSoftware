@@ -4,8 +4,10 @@ using namespace std;
 
 int main(){
 
+    bool primo;
+
     for(int i = 1; i <= 100; i++){
-        bool primo = true;
+        primo = true;
         for(int j = 2; j < i; j++){
             if(i % j == 0){
                 primo = false;

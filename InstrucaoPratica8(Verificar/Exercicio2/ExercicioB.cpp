@@ -7,9 +7,11 @@ int main()
     float array[250], maior, menor, media;
     int i;
 
+    srand(time(NULL));
+
     for (i = 0; i < 250; i++)
     {
-        array[i] = 10 + 30.0 * (rand() % 100) / 3000.0;
+        array[i] = 10 + 30.0 * (rand() % 3000) / 2999.0;
     }
 
     maior = array[0];
@@ -33,7 +35,7 @@ int main()
 
     cout << "A temperatura maxima reportada foi " << maior << " graus." << endl;
     cout << "A temperatura minima reportada foi " << menor << " graus." << endl;
-    cout << "A temperatura media reportada foi " << media << " graus." << endl;
+    cout << "\nA temperatura media reportada foi " << media << " graus." << endl;
 
     for (i = 0; i < 250; i++)
     {
@@ -66,9 +68,9 @@ int main()
 
     media /= 250;
 
-    cout << "A temperatura maxima prevista e " << maior << " graus." << endl;
+    cout << "\nA temperatura maxima prevista e " << maior << " graus." << endl;
     cout << "A temperatura minima prevista e " << menor << " graus." << endl;
-    cout << "A temperatura media prevista e " << media << " graus." << endl;
+    cout << "\nA temperatura media prevista e " << media << " graus." << endl;
 
     return 0;
 }
