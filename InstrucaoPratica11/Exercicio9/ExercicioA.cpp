@@ -1,9 +1,3 @@
-/*Faça uma função para calcular o valor de S, dado por:
-
-S = 1/n + 2/(n-1) + 3/(n-2) + ... + n/1
-
-Protótipo da função: float calc_serie(int N);*/
-
 #include <iostream>
 
 using namespace std;

@@ -1,7 +1,3 @@
-/*Escreva uma função que receba duas strings A e B por parâmetro e retorne uma
-terceira string C com os caracteres que aparecem tanto em A quanto em B. O
-tamanho das string A e B pode ser diferente.*/
-
 #include <iostream>
 
 using namespace std;
