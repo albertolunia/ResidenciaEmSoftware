@@ -1,8 +1,3 @@
-/* Faça uma função que receba dois vetores de números inteiros e os seus
-respectivos tamanhos por parâmetro e retorne um vetor com os valores dos dois
-vetores intercalados. Depois faça o programa principal para testar a sua função.
-Protótipo da função: int* intercala(int *vet1, int tam1, int *vet2, int tam2);*/
-
 #include <iostream>
 
 using namespace std;
@@ -53,18 +48,34 @@ int main()
 
 int* intercala(int *vet1, int tam1, int *vet2, int tam2)
 {
-    int *vet3, i, j;
+    int *vet3, i, j, k;
 
     vet3 = new int[tam1 + tam2];
 
-    for(i = 0, j = 0; i < tam1; i++, j += 2)
+    for(i = 0, j = 0, k = 0; i < tam1 + tam2; i++)
     {
-        vet3[j] = vet1[i];
-    }
-
-    for(i = 0, j = 1; i < tam2; i++, j += 2)
-    {
-        vet3[j] = vet2[i];
+        if(i % 2 == 0)
+        {
+            if(vet1[j] == NULL)
+            {
+                vet3[i] = vet2[k];
+                k++;
+                continue;
+            }
+            vet3[i] = vet1[j];
+            j++;
+        }
+        else
+        {
+            if(vet2[k] == NULL)
+            {
+                vet3[i] = vet1[j];
+                j++;
+                continue;
+            }
+            vet3[i] = vet2[k];
+            k++;
+        }
     }
 
     return vet3;

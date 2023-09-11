@@ -1,9 +1,3 @@
-/*Escreva uma função que recebe uma string de caracteres e uma letra e devolve um
-vetor de inteiros contendo as posições (índices no vetor da string) onde a letra foi
-encontrada) e um inteiro contendo o tamanho do vetor criado (total de letras iguais
-encontradas). Utilize o retorno de um vetor para retornar os índices e um ponteiro
-para guardar o tamanho do vetor.*/
-
 #include <iostream>
 
 using namespace std;
@@ -38,9 +32,12 @@ int main()
 
 int *encontra_letra(string str, char letra, int *qtde)
 {
-    int *vet = new int[str.length()], j = 0;
 
-    for(int i = 0; i < str.length(); i++)
+    int count = str.length(), j = 0;
+
+    int *vet = new int[count];
+
+    for(int i = 0; i < count; i++)
     {
         if(str[i] == letra)
         {
