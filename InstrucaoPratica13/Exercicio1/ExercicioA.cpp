@@ -1,3 +1,5 @@
+//Tudo funcionando porém sobreescreve dois passageiros na mesma poltrona
+
 #include <iostream>
 #include <cstring>
 
