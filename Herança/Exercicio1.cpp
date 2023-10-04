@@ -7,7 +7,7 @@ class Animal{
         string nome;
         int idade;
     public:
-        virtual void fazerSom();
+        virtual void fazerSom() {}
 };
 
 class Cachorro : Animal{

@@ -4,7 +4,7 @@ using namespace std;
 
 class Forma{
     public:
-        virtual void calcularArea() = 0;
+        void calcularArea(){};
 };
 
 
